@@ -1,0 +1,89 @@
+/* Estilo principal do rodapé */
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    color: #5a5a5a;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container principal do conteúdo do rodapé */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  /* Estilo para cada seção do rodapé */
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* Títulos das seções */
+  .footer-section h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-bottom: 1rem;
+  }
+  
+  /* Lista de links */
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #5a5a5a;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #007bff; /* Cor primária ao passar o mouse */
+  }
+  
+  /* Estilo para os ícones de redes sociais */
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  
+  /* Rodapé inferior */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e4e4e4;
+    font-size: 0.875rem;
+    color: #5a5a5a;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom p span {
+    color: #2fd926; /* Cor de destaque */
+    font-weight: bold;
+  }
+  

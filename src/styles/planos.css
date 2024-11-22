@@ -1,0 +1,242 @@
+#planos {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.container-planos {
+  padding: 20px;
+}
+
+.planos-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  justify-items: center; /* Centraliza itens dentro de cada grid cell */
+  flex-wrap: wrap; /* Adicionado para permitir que os itens se ajustem em múltiplas linhas em telas pequenas */
+}
+
+.plano {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%; /* Para que todos os planos tenham a mesma largura */
+  max-width: 300px; /* Defina uma largura máxima, se necessário */
+}
+
+.plano:hover {
+  transform: translateY(-10px);
+}
+
+.plano h2 {
+  font-size: 1.8rem;
+  color: #ffb300;
+}
+
+.speed {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.price {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+
+.btn-primary {
+  background-color: #ffb300;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #e0a200;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .planos-grid {
+      gap: 1rem; /* Menor espaçamento entre os itens em telas pequenas */
+  }
+
+  .plano {
+      max-width: 90%; /* Aumenta a largura dos planos em telas pequenas */
+  }
+
+  .speed {
+      font-size: 2rem; /* Ajuste no tamanho da fonte */
+  }
+
+  .price {
+      font-size: 1.4rem; /* Ajuste no tamanho da fonte */
+  }
+
+  .description {
+      font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  .planos-grid {
+      flex-direction: column; /* Exibe os planos em uma coluna em telas muito pequenas */
+      align-items: center; /* Centraliza os planos */
+  }
+
+  .plano {
+      width: 90%; /* Adapta a largura para ocupar mais espaço em telas pequenas */
+      max-width: none; /* Remove o limite de largura máxima em telas pequenas */
+      padding: 1.5rem; /* Ajusta o padding */
+  }
+
+  .speed {#planos {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .container-planos {
+    padding: 20px;
+  }
+  
+  .planos-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Aumentei o espaçamento entre os planos */
+    justify-items: center; /* Centraliza itens dentro de cada grid cell */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas em telas pequenas */
+  }
+  
+  .plano {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%; /* Para que todos os planos tenham a mesma largura */
+    max-width: 300px; /* Defina uma largura máxima, se necessário */
+    margin: 1rem; /* Adiciona um espaço extra ao redor dos planos */
+  }
+  
+  .plano:hover {
+    transform: translateY(-10px);
+  }
+  
+  .plano h2 {
+    font-size: 1.8rem;
+    color: #ffb300;
+  }
+  
+  .speed {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  
+  .price {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .btn-primary {
+    background-color: #ffb300;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e0a200;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .planos-grid {
+        gap: 2rem; /* Menor espaçamento entre os itens em telas pequenas */
+    }
+  
+    .plano {
+        max-width: 90%; /* Aumenta a largura dos planos em telas pequenas */
+    }
+  
+    .speed {
+        font-size: 2rem; /* Ajuste no tamanho da fonte */
+    }
+  
+    .price {
+        font-size: 1.4rem; /* Ajuste no tamanho da fonte */
+    }
+  
+    .description {
+        font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .planos-grid {
+        flex-direction: column; /* Exibe os planos em uma coluna em telas muito pequenas */
+        align-items: center; /* Centraliza os planos */
+    }
+  
+    .plano {
+        width: 90%; /* Adapta a largura para ocupar mais espaço em telas pequenas */
+        max-width: none; /* Remove o limite de largura máxima em telas pequenas */
+        padding: 1.5rem; /* Ajusta o padding */
+        margin: 1rem 0; /* Ajusta a margem */
+    }
+  
+    .speed {
+        font-size: 1.8rem; /* Ajuste no tamanho da fonte */
+    }
+  
+    .price {
+        font-size: 1.4rem; /* Ajuste no tamanho da fonte */
+    }
+  
+    .description {
+        font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+    }
+  
+    .btn-primary {
+        padding: 0.5rem 1rem; /* Ajusta o tamanho do botão */
+        font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+    }
+  }
+  
+      font-size: 1.8rem; /* Ajuste no tamanho da fonte */
+  }
+
+  .price {
+      font-size: 1.4rem; /* Ajuste no tamanho da fonte */
+  }
+
+  .description {
+      font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+  }
+
+  .btn-primary {
+      padding: 0.5rem 1rem; /* Ajusta o tamanho do botão */
+      font-size: 0.9rem; /* Ajuste no tamanho da fonte */
+  }
+}
