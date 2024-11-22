@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/testimonials.css";
 
 export const Testimonials = () => {
